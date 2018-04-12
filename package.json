@@ -17,6 +17,8 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "jest",
