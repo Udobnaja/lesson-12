@@ -6,13 +6,13 @@ import Image from 'e:Image';
 import FeedItemFeedback from 'b:FeedItemFeedback';
 
 import 'm:size=l|m|s';
-import 'm:text';
+import 'm:type=text';
 
 export default decl({
   block: 'FeedItem',
   tag: 'article',
   mods({size, image}){
-    return image ? {size} : {size, text: true};
+    return image ? {size} : {size, type: 'text'};
   },
   content() {
     const {title, titleColor, description, image} = this.props;

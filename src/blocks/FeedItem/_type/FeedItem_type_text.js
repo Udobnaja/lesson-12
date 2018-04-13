@@ -5,7 +5,7 @@ import FeedItemFeedback from 'b:FeedItemFeedback';
 export default declMod(({image}) => !image, {
   block: 'FeedItem',
   mods() {
-    return { ...this.__base(...arguments), text: true};
+    return { ...this.__base(...arguments), type: 'text'};
   },
   content() {
     const {title, titleColor, description} = this.props;

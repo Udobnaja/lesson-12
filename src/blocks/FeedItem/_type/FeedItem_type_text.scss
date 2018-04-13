@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 @import "../../../styles/FeedItem/placeholders";
-.FeedItem_text{
+.FeedItem_type_text{
   @extend %vertical-grid_s_size_text;
 
   .FeedItem-Description{
