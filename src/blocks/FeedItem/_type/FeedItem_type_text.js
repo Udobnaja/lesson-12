@@ -9,13 +9,13 @@ export default declMod(({image}) => !image, {
     return { ...this.__base(...arguments), type: 'text'};
   },
   content() {
-    const {title, titleColor, description} = this.props;
+    const {title, titleColor, description, channelName} = this.props;
 
     return  (
       <Fragment>
         <Title title={title} titleColor={titleColor}/>
         <Bem elem="Description" tag="p">{description}</Bem>
-        <FeedItemFeedback />
+        <FeedItemFeedback channel={channelName}/>
       </Fragment>
     );
   }
