@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import { declMod, Bem} from 'bem-react-core';
 import FeedItemFeedback from 'b:FeedItemFeedback';
+import Title from 'e:Title';
 
 export default declMod(({image}) => !image, {
   block: 'FeedItem',
@@ -9,13 +10,10 @@ export default declMod(({image}) => !image, {
   },
   content() {
     const {title, titleColor, description} = this.props;
-    const style = {
-      color: titleColor,
-    };
 
     return  (
       <Fragment>
-        <Bem elem="Title" tag="h2" style={style}>{title}</Bem>
+        <Title title={title} titleColor={titleColor}/>
         <Bem elem="Description" tag="p">{description}</Bem>
         <FeedItemFeedback />
       </Fragment>

@@ -18,7 +18,7 @@
 
   .FeedItem{
     @include media('(min-width : 768px)') {
-      &-Title{
+      &-Headline{
         font-size: $title-font-size-normal;
       }
     }

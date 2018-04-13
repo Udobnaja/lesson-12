@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import { decl, Bem } from 'bem-react-core';
-import 'e:Title';
+import { decl } from 'bem-react-core';
+import Title from 'e:Title';
 import 'e:Description';
 import Image from 'e:Image';
 import FeedItemFeedback from 'b:FeedItemFeedback';
@@ -16,14 +16,11 @@ export default decl({
     return {size};
   },
   content() {
-    const {title, titleColor, description, image} = this.props;
-    const style = {
-      color: titleColor,
-    };
+    const {title, titleColor, image} = this.props;
 
     return  (
       <Fragment>
-        <Bem elem="Title" tag="h2" style={style}>{title}</Bem>
+        <Title title={title} titleColor={titleColor}/>
         <Image image={image} alt={title} />
         <FeedItemFeedback />
       </Fragment>
