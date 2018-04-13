@@ -1,22 +1,15 @@
 import React, {Fragment} from 'react';
-import { decl, Bem } from 'bem-react-core';
-import 'e:Title';
-import 'e:Description';
-import Image from 'e:Image';
+import { declMod, Bem} from 'bem-react-core';
 import FeedItemFeedback from 'b:FeedItemFeedback';
+import Image from 'e:Image';
 
-import 'm:size=l|m|s';
-import 'm:type=text';
-import 'm:description';
-
-export default decl({
+export default declMod(({description, image}) => !!(description && image), {
   block: 'FeedItem',
-  tag: 'article',
-  mods({size}){
-    return {size};
+  mods() {
+    return { ...this.__base(...arguments), description: true};
   },
   content() {
-    const {title, titleColor, description, image} = this.props;
+    const {title, titleColor, image, description} = this.props;
     const style = {
       color: titleColor,
     };
@@ -25,9 +18,10 @@ export default decl({
       <Fragment>
         <Bem elem="Title" tag="h2" style={style}>{title}</Bem>
         <Image image={image} alt={title} />
+        <Bem elem="Description" tag="p">{description}</Bem>
         <FeedItemFeedback />
       </Fragment>
     );
-
   }
-});
+})
+
