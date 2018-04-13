@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import { declMod, Bem} from 'bem-react-core';
 import 'e:Channel';
 

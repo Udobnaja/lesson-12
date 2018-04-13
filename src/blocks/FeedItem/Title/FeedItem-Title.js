@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import { decl, Bem } from 'bem-react-core';
 import 'e:Headline';
 

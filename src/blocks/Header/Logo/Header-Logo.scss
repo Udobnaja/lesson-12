@@ -1,0 +1,15 @@
+@import "../../../styles/mixins";
+
+.Header-Logo{
+  width: 45px;
+  height: 11px;
+  background-image: url('./Header-Logo.png');
+  background-image: image-set(url('./Header-Logo.png') 1x, url('./Header-Logo@2x.png') 2x);
+  background-repeat: no-repeat;
+  @include media('(min-width : 768px)') {
+    width: 90px;
+    height: 21px;
+    background-image: url('./Header-Logo@2x.png');
+    background-image: image-set(url('./Header-Logo@2x.png') 1x, url('./Header-Logo@3x.png') 2x);
+  }
+}
