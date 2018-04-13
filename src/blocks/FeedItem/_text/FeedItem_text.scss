@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/FeedItem/placeholders";
+.FeedItem_text{
+  @extend %vertical-grid_s_size_text;
+
+  .FeedItem-Description{
+    grid-area: content;
+    @include overflow-ellipsis-display;
+    @include overflow-ellipsis(8, $description-line-height);
+  }
+
+  .FeedItemFeedback{
+    grid-row: unset;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+}

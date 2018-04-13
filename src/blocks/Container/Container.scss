@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.Container{
+  min-width: $base*35;
+  width: 80%;
+  max-width: $base*88;
+  margin: 0 auto;
+
+  @include media('(min-width : 920px)') {
+    width: 72%;
+  }
+
+  @include media('(min-width : 1440px)') {
+    width: 64%;
+    max-width: $base*147;
+  }
+}

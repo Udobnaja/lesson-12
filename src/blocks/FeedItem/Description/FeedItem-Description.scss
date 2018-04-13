@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.FeedItem-Description{
+  margin: 0;
+  transition: color .1s;
+
+  font-size: 0.875rem;
+  line-height: $description-line-height;
+  grid-area: footer;
+  display: none;
+
+  @include media('(min-width : 768px)') {
+    @include overflow-ellipsis-display;
+    @include overflow-ellipsis(8, $description-line-height);
+  }
+}

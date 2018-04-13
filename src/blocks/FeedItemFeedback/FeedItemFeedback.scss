@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.FeedItemFeedback{
+  grid-area: controls;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+
+  margin-right: $base*1.5;
+  padding-top: $base*1.5;
+  padding-bottom: $base*1.5;
+
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include media('(min-width : 768px)') {
+    padding-top: $base*2;
+    padding-bottom: $base*2;
+    margin-right: $base*2;
+  }
+}

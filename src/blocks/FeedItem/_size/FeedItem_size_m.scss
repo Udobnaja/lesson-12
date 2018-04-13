@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+@import "../../../styles/FeedItem/placeholders";
+
+.FeedItem_size_m{
+  grid-column: auto / span 6;
+
+  @include media('(min-width : 530px)') {
+    grid-column: auto / span 3;
+  }
+
+  @extend %vertical-grid;
+  @extend %vertical-grid_m_size;
+
+  .FeedItem{
+    &-image{
+      grid-column-end: 3;
+    }
+
+    &-Description{
+      @include overflow-ellipsis(3, $description-line-height);
+    }
+  }
+
+  @include media('(min-width : 768px)') {
+    .FeedItemFeedback{
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 0;
+    }
+  }
+}
