@@ -13,7 +13,7 @@
   @extend %vertical-grid_m_size;
 
   .FeedItem{
-    &-image{
+    &-Image{
       grid-column-end: 3;
     }
 

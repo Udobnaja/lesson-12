@@ -5,7 +5,6 @@
   margin: 0;
   transition: color .1s;
   font-weight: 700;
-  grid-area: header;
   line-height: 1.250em;
   font-size: $title-font-size-big;
   @include media('(min-width : 768px)') {
