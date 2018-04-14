@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import { decl, Bem } from 'bem-react-core';
-import 'b:Control';
 import 'b:Control m:icon=heart|actions';
 import 'm:channel';
 

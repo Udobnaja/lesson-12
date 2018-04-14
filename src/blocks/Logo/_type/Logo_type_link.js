@@ -12,8 +12,6 @@ export default declMod(({href}) => !!href, {
     }
   },
   content() {
-    return [
-      this.__base(...arguments)
-    ]
+    return this.__base(arguments)
   }
 });

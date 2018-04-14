@@ -16,13 +16,13 @@ export default decl({
     return {size};
   },
   content() {
-    const {title, titleColor, image} = this.props;
+    const {title, titleColor, image, channel} = this.props;
 
     return  (
       <Fragment>
         <Title title={title} titleColor={titleColor}/>
         <Image image={image} alt={title} />
-        <FeedItemFeedback />
+        <FeedItemFeedback channel={channel} />
       </Fragment>
     );
 
