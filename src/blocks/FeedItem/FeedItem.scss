@@ -4,4 +4,6 @@
   position: relative;
 
   grid-row-gap: $base;
+  grid-column: auto / span 6;
+  grid-template-areas: "header header" "content controls";
 }
