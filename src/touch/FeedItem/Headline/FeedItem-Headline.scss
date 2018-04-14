@@ -1,0 +1,8 @@
+@import "../../../styles/mixins";
+
+.FeedItem-Headline{
+  @include media('(min-width : 768px)') {
+    @include overflow-ellipsis-display;
+    @include overflow-ellipsis(4,  1.250em);
+  }
+}

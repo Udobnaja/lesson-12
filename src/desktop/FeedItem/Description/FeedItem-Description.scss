@@ -1,0 +1,7 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.FeedItem-Description{
+    @include overflow-ellipsis-display;
+    @include overflow-ellipsis(8, $description-line-height);
+}

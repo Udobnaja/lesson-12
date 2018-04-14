@@ -1,16 +1,4 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
-@import "../../styles/FeedItem/placeholders";
-
 .FeedItem{
   display: grid;
   position: relative;
-
-  &:hover{
-    .FeedItem-Image{
-      &:after{
-        background-color: rgba(0,0,0,.4);
-      }
-    }
-  }
 }

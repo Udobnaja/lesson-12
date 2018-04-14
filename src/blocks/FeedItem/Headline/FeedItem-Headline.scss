@@ -1,5 +1,4 @@
 @import "../../../styles/variables";
-@import "../../../styles/mixins";
 
 .FeedItem-Headline{
   margin: 0;
@@ -7,8 +6,4 @@
   font-weight: 700;
   line-height: 1.250em;
   font-size: $title-font-size-big;
-  @include media('(min-width : 768px)') {
-    @include overflow-ellipsis-display;
-    @include overflow-ellipsis(4,  1.250em);
-  }
 }
