@@ -1,4 +1,3 @@
-import React, {Fragment} from 'react';
 import { declMod } from 'bem-react-core';
 
 export default declMod(({size}) => size === 'l', {

@@ -1,4 +1,3 @@
-import React, {Fragment} from 'react';
 import { decl } from 'bem-react-core';
 import 'e:Description';
 
