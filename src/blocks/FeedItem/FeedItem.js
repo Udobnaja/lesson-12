@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import { decl } from 'bem-react-core';
 import Title from 'e:Title';
-import 'e:Description';
 import Image from 'e:Image';
 import FeedItemFeedback from 'b:FeedItemFeedback';
 
