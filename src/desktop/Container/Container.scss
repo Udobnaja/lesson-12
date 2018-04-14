@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.Container{
+
+  width: 72%;
+
+  @include media('(min-width : 1440px)') {
+    width: 64%;
+    max-width: $base*147;
+  }
+}

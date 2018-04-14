@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.Container{
+
+  @include media('(min-width : 920px)') {
+    width: 72%;
+  }
+
+}

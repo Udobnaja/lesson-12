@@ -1,0 +1,8 @@
+@import "../../../styles/mixins";
+
+.Header-Logo{
+    width: 90px;
+    height: 21px;
+    //background-image: url('./Header-Logo@2x.png');
+    //background-image: image-set(url('./Header-Logo@2x.png') 1x, url('./Header-Logo@3x.png') 2x);
+}

@@ -1,7 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 .Feed{
-  $feed: &;
   display: grid;
   grid-gap: $base*3 $base*2;
   grid-template-columns: repeat(6, 1fr);
@@ -9,10 +8,4 @@
   margin-bottom: $base*5;
   grid-auto-flow: row dense;
   cursor: pointer;
-  @include media('(min-width : 768px)') {
-    grid-row-gap: $base*4;
-  }
-  @include media('(min-width : 1440px)') {
-    grid-column-gap: $base*4;
-  }
 }
