@@ -11,7 +11,6 @@ export default declMod(({description, image}) => !!(description && image), {
   },
   content() {
     const {title, titleColor, image, description} = this.props;
-
     return  (
       <Fragment>
         <Title title={title} titleColor={titleColor}/>

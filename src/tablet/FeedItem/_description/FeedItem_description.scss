@@ -1,0 +1,10 @@
+.FeedItem_description{
+  grid-template-columns: auto 40px;
+  grid-template-areas: "header header" "content content" "footer controls";
+  grid-template-rows: min-content minmax(10rem, auto) min-content;
+  .FeedItemFeedback{
+    grid-row: 3/4;
+    padding: 0;
+    margin-right: 0;
+  }
+}

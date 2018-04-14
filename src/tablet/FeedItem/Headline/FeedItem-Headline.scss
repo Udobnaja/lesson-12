@@ -1,0 +1,7 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.FeedItem-Headline{
+  @include overflow-ellipsis-display;
+  @include overflow-ellipsis(4,  1.250em);
+}

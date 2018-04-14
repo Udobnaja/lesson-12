@@ -1,8 +1,11 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
-@import "../../../styles/FeedItem/placeholders";
 .FeedItem_type_text{
-  @extend %vertical-grid_s_size_text;
+  grid-template-areas: "header"
+  "content"
+  "controls";
+
+  grid-template-rows: min-content auto $base*5;
 
   .FeedItem-Description{
     grid-area: content;

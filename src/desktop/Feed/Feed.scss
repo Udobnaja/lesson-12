@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 .Feed{
+  cursor: pointer;
   grid-row-gap: $base*4;
 
   @include media('(min-width : 1440px)') {

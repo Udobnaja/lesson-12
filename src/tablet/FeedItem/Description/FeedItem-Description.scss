@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.FeedItem-Description{
+  @include overflow-ellipsis-display;
+  @include overflow-ellipsis(3, $description-line-height);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
