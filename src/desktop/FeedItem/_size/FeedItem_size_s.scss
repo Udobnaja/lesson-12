@@ -3,33 +3,17 @@
 @import "../../../styles/FeedItem/placeholders";
 
 .FeedItem_size_s{
-  grid-column: auto / span 6;
 
-  @include media('(min-width : 530px)') {
-    grid-column: auto / span 3;
-  }
-
-  @include media('(min-width : 1024px)') {
-    grid-column: auto / span 2;
-  }
-
-  @extend %vertical-grid;
-  @extend %vertical-grid_s_size;
+  grid-column: auto / span 2;
 
   .FeedItem{
-    @include media('(min-width : 768px)') {
       &-Headline{
         font-size: $title-font-size-normal;
       }
-    }
 
     &-Image{
       grid-row: 2 / 4;
       grid-column: 1 / 3;
     }
-  }
-
-  .FeedItemFeedback{
-    grid-row: 2 / 4;
   }
 }

@@ -3,37 +3,26 @@
 @import "../../../styles/FeedItem/placeholders";
 
 .FeedItem_size_l{
-  grid-column: auto / span 6;
-  @extend %horizontal-grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $base $base*2;
+  grid-template-areas:
+          "content content header"
+          "content content footer"
+          "content content controls";
 
-  @include media('(min-width : 768px)') {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @include media('(min-width : 1024px)') {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  grid-template-rows: auto  minmax(10rem, auto) $base*3;
 
   .FeedItem{
     &-Image{
-      grid-column-end: 3;
-
-      @include media('(min-width : 768px)') {
-        grid-column-end: 2;
-      }
-
-      @include media('(min-width : 1024px)') {
         grid-column-end: 3;
-      }
     }
   }
 
-  @include media('(min-width : 768px)') {
-    .FeedItemFeedback{
-      flex-direction: row;
-      align-items: center;
-      margin-right: 0;
-    }
+  .FeedItemFeedback{
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    grid-row: unset;
   }
+
 }

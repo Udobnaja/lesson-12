@@ -3,6 +3,7 @@ import { declMod, Bem} from 'bem-react-core';
 import FeedItemFeedback from 'b:FeedItemFeedback';
 import Image from 'e:Image';
 import Title from 'e:Title';
+import 'e:Description';
 
 export default declMod(({description, image}) => !!(description && image), {
   block: 'FeedItem',

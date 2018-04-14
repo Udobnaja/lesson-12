@@ -1,6 +1,11 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 .FeedItem{
+
+  @include media('(min-width : 1440px)') {
+    grid-row-gap: $base*1.5;
+  }
+
   &:hover{
     .FeedItem-Image{
       &:after{

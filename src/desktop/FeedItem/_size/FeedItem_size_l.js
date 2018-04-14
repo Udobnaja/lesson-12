@@ -6,4 +6,3 @@ export default declMod({ size : 'l' }, {
     return { ...this.__base(...arguments), size: 'l'};
   },
 })
-

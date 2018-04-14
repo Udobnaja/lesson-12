@@ -3,14 +3,15 @@
 @import "../../../styles/FeedItem/placeholders";
 
 .FeedItem_size_m{
-  grid-column: auto / span 6;
+  grid-column: auto / span 3;
+  grid-template-areas:
+          "header header"
+          "content content"
+          "footer controls";
 
-  @include media('(min-width : 530px)') {
-    grid-column: auto / span 3;
-  }
+  grid-template-rows: min-content minmax(10rem, auto) min-content;
+  grid-template-columns: auto 5*$base;
 
-  @extend %vertical-grid;
-  @extend %vertical-grid_m_size;
 
   .FeedItem{
     &-Image{
@@ -22,11 +23,10 @@
     }
   }
 
-  @include media('(min-width : 768px)') {
-    .FeedItemFeedback{
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-right: 0;
-    }
+  .FeedItemFeedback{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    grid-row: unset;
   }
 }

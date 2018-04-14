@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .FeedItem-Description{
   margin: 0;
@@ -7,4 +8,8 @@
   font-size: 0.875rem;
   line-height: $description-line-height;
   grid-area: footer;
+
+  @include overflow-ellipsis-display;
+  @include overflow-ellipsis(3, $description-line-height);
+
 }
