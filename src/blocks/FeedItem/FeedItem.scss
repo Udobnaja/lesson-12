@@ -6,4 +6,5 @@
   grid-row-gap: $base;
   grid-column: auto / span 6;
   grid-template-areas: "header header" "content controls";
+  grid-template-rows: min-content minmax(10rem, auto);
 }
