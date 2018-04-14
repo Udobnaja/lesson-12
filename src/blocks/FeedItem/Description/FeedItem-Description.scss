@@ -10,6 +10,4 @@
   grid-area: footer;
 
   @include overflow-ellipsis-display;
-  @include overflow-ellipsis(3, $description-line-height);
-
 }

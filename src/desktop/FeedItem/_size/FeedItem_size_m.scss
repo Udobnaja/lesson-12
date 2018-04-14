@@ -14,10 +14,6 @@
 
 
   .FeedItem{
-    &-Image{
-      grid-column-end: 3;
-    }
-
     &-Description{
       @include overflow-ellipsis(3, $description-line-height);
     }
