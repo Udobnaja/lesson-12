@@ -1,7 +1,7 @@
 # БЭМ
 
 DEMO: https://dry-sea-25967.herokuapp.com/  
-_При смене устройства желатльно обновлять кэш cmd+shift+r так как ServiceWorker делаеь свою работу_
+_При смене устройства желательно обновлять кэш cmd+shift+r так как ServiceWorker делает свою работу_
 
 ## Команды
 
@@ -19,7 +19,7 @@ _При смене устройства желатльно обновлять к
 
 Собрано три бандла для desktop, mobile и tablet.
 
-Тип сборки выбирается на стороне сервера (express.js) основе user-agent. 
+Тип сборки выбирается на стороне сервера на основе user-agent. 
 
 Фиды загружаются https://udobnaja.github.io/lesson-1/api/feed/data.json
 
