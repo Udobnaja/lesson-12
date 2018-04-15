@@ -1,5 +1,4 @@
 @import "../../../styles/variables";
-@import "../../../styles/mixins";
 .FeedItem_type_text {
   grid-template-areas: "header"
   "content"
@@ -9,7 +8,6 @@
 
   .FeedItem-Description{
     grid-area: content;
-    @include overflow-ellipsis-display;
     @include overflow-ellipsis(8, $description-line-height);
   }
 

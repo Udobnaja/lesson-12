@@ -11,8 +11,9 @@ export default decl({
   },
   componentDidMount() {
     fetch('https://udobnaja.github.io/lesson-1/api/feed/data.json')
-      .then((response) => response.json())
+      .then((response) => {console.log(response); return response.json()})
       .then((data) => this.setState({items: data.feed}))
+      .catch(console.error)
 
   },
   content() {
