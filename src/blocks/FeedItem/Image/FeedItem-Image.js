@@ -6,8 +6,11 @@ export default decl({
   elem : 'Image',
   tag: 'picture',
   content() {
-    const {image, alt} = this.props;
-    const [img, ext] = image.split('.');
+    const url = 'https://udobnaja.github.io/lesson-1/';
+    let {image, alt} = this.props;
+    let [img, ext] = image.split('.');
+    image = url + image;
+    img = url + img;
     return (
       <Fragment>
         <source srcSet={`${img}@2x.${ext}, ${img}@3x.${ext} 3x`} media="(min-width: 768px)"/>
