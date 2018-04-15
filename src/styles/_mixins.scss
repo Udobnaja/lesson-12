@@ -6,7 +6,7 @@
 
 @mixin overflow-ellipsis-display(){
   display: -webkit-box;
-  box-orient: vertical;
+  -webkit-box-orient: vertical; // почему не проходит при деплое
   overflow: hidden;
 }
 
