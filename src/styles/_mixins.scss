@@ -6,7 +6,7 @@
 
 @mixin overflow-ellipsis-display(){
   display: -webkit-box;
-  -webkit-box-orient: vertical;
+  box-orient: vertical;
   overflow: hidden;
 }
 
