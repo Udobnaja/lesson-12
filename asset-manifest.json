@@ -1,0 +1,16 @@
+{
+  "main.css": "static/css/mobile.css",
+  "main.css.map": "static/css/mobile.css.map",
+  "main.js": "static/js/mobile.js",
+  "main.js.map": "static/js/mobile.js.map",
+  "static/media/YS Text-Bold.svg": "static/media/YS Text-Bold.a1a31d78.svg",
+  "static/media/YS Text-Bold.ttf": "static/media/YS Text-Bold.4a38e4aa.ttf",
+  "static/media/YS Text-Bold.woff": "static/media/YS Text-Bold.e199e5b5.woff",
+  "static/media/YS Text-Bold.woff2": "static/media/YS Text-Bold.e783c489.woff2",
+  "static/media/YS Text-Regular.svg": "static/media/YS Text-Regular.ef6e15d0.svg",
+  "static/media/YS Text-Regular.ttf": "static/media/YS Text-Regular.bd0d0add.ttf",
+  "static/media/YS Text-Regular.woff": "static/media/YS Text-Regular.e759fb47.woff",
+  "static/media/YS Text-Regular.woff2": "static/media/YS Text-Regular.f8883ab9.woff2",
+  "static/media/YSText-Bold.eot": "static/media/YSText-Bold.e1048c67.eot",
+  "static/media/YSText-Regular.eot": "static/media/YSText-Regular.40f4030e.eot"
+}
