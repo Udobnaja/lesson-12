@@ -32,7 +32,7 @@
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer build/static/js/desktop.*",
     "server": "node index.js",
-    "watch-server": "nodemon index.js",
+    "watch-server": "nodemon index.js"
   },
   "devDependencies": {
     "babel-plugin-bem-import": "1.5.3",

@@ -3,7 +3,6 @@ const compression = require('compression');
 const useragent = require('express-useragent');
 
 const path = require('path');
-const fs = require('fs');
 
 const app = express();
 

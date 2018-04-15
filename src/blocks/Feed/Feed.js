@@ -13,8 +13,7 @@ export default decl({
     fetch('https://udobnaja.github.io/lesson-1/api/feed/data.json')
       .then((response) => response.json())
       .then((data) => this.setState({items: data.feed}))
-      .catch(console.error)
-
+      .catch(console.error);
   },
   content() {
     return this.state.items.map((item, index) => <FeedItem  {...item} key={index}/>);
