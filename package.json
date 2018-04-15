@@ -33,12 +33,9 @@
     "analyze": "source-map-explorer build/static/js/desktop.*",
     "server": "node index.js",
     "watch-server": "nodemon index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel-plugin-bem-import": "1.5.3",
-    "gh-pages": "^1.1.0",
     "jest-cli": "22.4.3",
     "nodemon": "^1.17.3",
     "rewire-bem-sets": "1.0.1"
