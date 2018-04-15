@@ -28,9 +28,9 @@ module.exports = {
   ],
   // remove sets to build one universal bundle for index.html
   sets: {
-    desktop: 'common desktop',
+    mobile: 'common touch mobile',
     tablet: 'common touch tablet',
-    mobile: 'common touch mobile'
+    desktop: 'common desktop',
   },
   modules: {
     'bem-tools': {
