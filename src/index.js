@@ -5,5 +5,5 @@ import registerServiceWorker from './registerServiceWorker';
 
 import Page from 'b:Page';
 
-ReactDOM.render(<Page />, document.getElementById('root'));
+ReactDOM.render(<Page/>, document.getElementById('root'));
 registerServiceWorker();
